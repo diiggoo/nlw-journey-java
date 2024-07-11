@@ -34,10 +34,10 @@ public class Trip {
     @Column(name = "is_confirmed", nullable = false)
     private Boolean isConfirmed;
 
-    @Column(name = "owner_name")
+    @Column(name = "owner_name", nullable = false)
     private String ownerName;
 
-    @Column(name = "owner_email")
+    @Column(name = "owner_email", nullable = false)
     private String ownerEmail;
 
     public Trip(TripRequestPayload data){
